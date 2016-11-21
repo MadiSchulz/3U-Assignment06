@@ -11,7 +11,7 @@ import java.util.Scanner;
  */
 public class Q2 {
 
-    // Create method
+    // Create procedure-type method
     public static void examGrade(int percent) {
         // If less than 50%,
         if (percent < 50) {
@@ -45,7 +45,7 @@ public class Q2 {
         Scanner input = new Scanner(System.in);
         // Ask user to input exam percentage
         System.out.println("Input the exam percentage:");
-        // Store user's answer
+        // Store user's percentage
         int percent = input.nextInt();
 
         // Output answer to user using method

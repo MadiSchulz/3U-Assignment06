@@ -11,7 +11,7 @@ import java.util.Scanner;
  */
 public class Q1 {
 
-    // Create method
+    // Create function-type method
     public static double circleArea(double radius) {
         // Calculate area
         double area = 3.14 * (Math.pow(radius, 2));
@@ -28,7 +28,7 @@ public class Q1 {
         Scanner input = new Scanner(System.in);
         // Ask user to input a radius value
         System.out.println("Input a radius value:");
-        // Store user's answer
+        // Store user's radius value
         double radius = input.nextDouble();
 
         // Calculate area of circle using method
