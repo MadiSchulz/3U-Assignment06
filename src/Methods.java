@@ -27,10 +27,12 @@ public class Methods {
         return answer;
     }
     // void changes to int, then add a return answer;
-    public static void add(int num1, int num2, int answer){
+
+    public static void add(int num1, int num2, int answer) {
         answer = num1 + num2;
         // else, return 42
     }
+
     /**
      * @param args the command line arguments
      */
@@ -50,22 +52,22 @@ public class Methods {
 
         // Now using a method, variable name in methods and name1 below are storing the same info
         sayHello(name1);
-        
+
         // Calculate area of a rectangle
         System.out.println("Please input a length");
         double length = input.nextDouble();
         System.out.println("Please input a width");
         double width = input.nextDouble();
         // Store in new variable
-        double area = calcRectArea(2.5, 2.0); 
+        double area = calcRectArea(2.5, 2.0);
         // Now output to user
         System.out.println("Area is " + area);
-                
+
 
         int answer = 0;
         // Answer is 0 because actual answer only exists up top
         // answer = (line below)
-        add(5,3,answer);
+        add(5, 3, answer);
         // Everything is 0; variables inside the method get deleted because they are temporary variables
         System.out.println(answer);
 
