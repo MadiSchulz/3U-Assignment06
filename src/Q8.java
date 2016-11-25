@@ -26,7 +26,12 @@ public class Q8 {
         // Create scanner for user input
         Scanner input = new Scanner(System.in);
         // Ask user for day number
-        System.out.println("What is th");
+        System.out.println("What is the day as an integer?");
+        // Store day integer
+        int day == input.nextLine();
         // Ask user for month number
+        System.out.println("What is the month as an integer?");
+        // Store month integer
+        
     }
 }
