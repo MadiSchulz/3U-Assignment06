@@ -36,6 +36,8 @@ public class Q3 {
         // Store user's number
         int number = input.nextInt();
 
+        // Tell users what numbers mean
+        System.out.println("The factors of " + number + " are:");
         // Output factor list using method
         factors(number);
     }

@@ -17,9 +17,31 @@ public class Q5 {
         for (int l = 0; l < number; l++) {
             // Generate one line with a random # of asterisks
             int line = (int) (Math.random() * (5 - 1 + 1)) + 1;
-            // 
-            // Output line
-            System.out.println();
+            // If line == 1
+            if (line == 1) {
+                // Output line of asterisks
+                System.out.println("*");
+            }
+            // If line == 2
+            if (line == 2) {
+                // Output line of asterisks
+                System.out.println("**");
+            }
+            // If line == 3
+            if (line == 3) {
+                // Output line of asterisks
+                System.out.println("***");
+            }
+            // If line == 4
+            if (line == 4) {
+                // Output line of asterisks
+                System.out.println("****");
+            }
+            // If line == 5
+            if (line == 5) {
+                // Output line of asterisks
+                System.out.println("*****");
+            }
         }
     }
 

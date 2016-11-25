@@ -18,7 +18,6 @@ public class Q4 {
          = principal * Math.pow(1.0 + rate, years);
         // Return answer to user
         return B;
-
         // 
     }
 
@@ -32,8 +31,7 @@ public class Q4 {
         // Ask user to input the compound interest
         System.out.println("Please input the compound interest:");
         // Store the compound interest
-        double 
-        
-      
+
+
     }
 }

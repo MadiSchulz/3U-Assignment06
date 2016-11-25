@@ -1,3 +1,6 @@
+
+import java.util.Scanner;
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -9,16 +12,21 @@
  */
 public class Q8 {
 
-    // Create function-type method
-    public static int season(int day, int month){
-        // Return --- to user
+    // Create procedure-type method
+    public static void season(int day, int month){
+        // 
         
-        return ;
+        
     }
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        // Create scanner for user input
+        Scanner input = new Scanner(System.in);
+        // Ask user for day number
+        System.out.println("What is th");
+        // Ask user for month number
     }
 }
