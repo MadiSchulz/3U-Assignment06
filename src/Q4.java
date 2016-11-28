@@ -15,7 +15,6 @@ public class Q4 {
     public static double compoundInterest(double P, double r, int n) {
         // Calculate compound interest
         double B = P(1 + r) ^ n;
-         = principal * Math.pow(1.0 + rate, years);
         // Return answer to user
         return B;
         // 

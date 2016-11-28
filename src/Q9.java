@@ -10,11 +10,14 @@
  */
 public class Q9 {
 
+    // Create function-type method
+    public static int allDigitsOdd()
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        
     }
     
 }
