@@ -13,11 +13,16 @@ import java.util.Scanner;
 public class Q8 {
 
     // Create procedure-type method
-    public static void season(int day, int month){
-        // 1-15, day >=1 && day =<12
-        if(day >=1 && day =<12){
-        // 16-31, day >=16 && day =< 31    
-    }
+        public static void season(int day, int month){
+        // Day 1-15
+        // Day 16-31
+            
+        // Winter if 1, 2, first half 3, second half 12
+        // Spring if second half 3, 4, 5, first half 6
+        // Summer if second half 6, 7, 8, first half 9
+        // Fall if second half 9, 10, 11, first half 12
+        }
+        
     /**
      * @param args the command line arguments
      */

@@ -14,9 +14,9 @@ public class Q4 {
     // Create function-type method
     public static double compoundInterest(double P, double r, int n) {
         // Calculate compound interest
-        double B = P(1 + r) ^ n;
+        double newBalance;
         // Return answer to user
-        return B;
+        return newBalance;
         // 
     }
 
@@ -27,10 +27,9 @@ public class Q4 {
 
         // Create scanner for user input
         Scanner input = new Scanner(System.in);
-        // Ask user to input the compound interest
-        System.out.println("Please input the compound interest:");
-        // Store the compound interest
-
-
+        // Ask user to input the current balance
+        System.out.println("The current balance is:");
+        // Store the current balance
+        double balance = input.nextDouble();
     }
 }

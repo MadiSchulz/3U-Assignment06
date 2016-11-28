@@ -13,9 +13,10 @@ import java.util.Scanner;
  */
 public class Q6 {
 // Create procedure-type method
-    public static void lastDigit(int integer){
+    public static int lastDigit(int integer){
         // Pull integer apart
-        int digit = integer / 10;
+        int digit = integer % 10; 
+        return digit;
     }
     
     /**
@@ -29,8 +30,9 @@ public class Q6 {
         // Store user's integer
         int integer = input.nextInt();
         
-        // Output last digit using method
-        lastDigit(integer);
+        int lastDigit = lastDigit(integer);
+        
+        System.out.println(lastDigit);
+        
     }
-    
 }
