@@ -11,11 +11,10 @@
 public class Q9 {
 
     // Create function-type method
-    public static int allDigitsOdd(int integer){
-        for(int digits = 0; digits < integer; digits++){
-            
+    public static boolean allDigitsOdd(int integer){
+        
+         
         }
-            
     }
     /**
      * @param args the command line arguments

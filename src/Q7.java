@@ -14,16 +14,21 @@ public class Q7 {
 
     // Create function-type method
     public static int firstDigit(int integer) {
-        // If negative integer, make it positive
+        // If integer is negative
         if (integer < 0) {
+            // Make it positive
             integer = integer * (-1);
         }
+        
+        // Find way to multiply by power of 10s 
+        
         // Isolate the first digit in integer
         int digit = integer / 10;
+        
         // Return first digit
         return digit;
     }
-
+    
     /**
      * @param args the command line arguments
      */
@@ -42,5 +47,4 @@ public class Q7 {
         // Output the last digit
         System.out.println("The first digit is " + firstDigit);
     }
-
 }

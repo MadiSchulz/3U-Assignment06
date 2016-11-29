@@ -14,8 +14,9 @@ public class Q6 {
 
     // Create function-type method
     public static int lastDigit(int integer) {
-        // If negative integer, make it positive
+        // If integer is negative
         if (integer < 0) {
+            // Make it positive
             integer = integer * (-1);
         }
         // Isolate the last digit in integer
