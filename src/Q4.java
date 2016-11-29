@@ -14,7 +14,7 @@ public class Q4 {
     // Create function-type method
     public static double compoundInterest(double P, double r, double n) {
         // Calculate new balance
-        double B = P * Math.pow((1 + r/100), n);
+        double B = P * Math.pow((1 + r / 100), n);
         // Return new balance to user
         return B;
     }
@@ -41,7 +41,7 @@ public class Q4 {
 
         // Calculate new balance using method
         double newBalance = compoundInterest(P, r, n);
-        
+
         // Output new balance
         System.out.println("New balance = " + newBalance);
     }

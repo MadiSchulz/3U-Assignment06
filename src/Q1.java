@@ -14,8 +14,8 @@ public class Q1 {
     // Create function-type method
     public static double circleArea(double radius) {
         // Calculate area
-        double area = 3.14 * (Math.pow(radius, 2));
-        // Return answer to user
+        double area = 3.14 * Math.pow(radius, 2);
+        // Return area to user
         return area;
     }
 

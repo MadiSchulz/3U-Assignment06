@@ -8,15 +8,19 @@ import java.util.Scanner;
  */
 /**
  *
- * @author madis
+ * @author schum0689
  */
 public class Q6 {
 
     // Create function-type method
     public static int lastDigit(int integer) {
+        // If negative integer, make it positive
+        if (integer < 0) {
+            integer = integer * (-1);
+        }
         // Isolate the last digit in integer
         int digit = integer % 10;
-        // Return last digit to user
+        // Return last digit
         return digit;
     }
 

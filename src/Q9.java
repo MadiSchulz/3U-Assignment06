@@ -6,7 +6,7 @@
 
 /**
  *
- * @author madis
+ * @author schum0689
  */
 public class Q9 {
 

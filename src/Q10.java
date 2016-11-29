@@ -6,10 +6,15 @@
 
 /**
  *
- * @author madis
+ * @author schum0689
  */
 public class Q10 {
 
+    // Create procedure-type method
+    public static void sameDashes(String one, String two){
+        // 
+    }
+    
     /**
      * @param args the command line arguments
      */
