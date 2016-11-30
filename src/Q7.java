@@ -20,8 +20,6 @@ public class Q7 {
             integer = integer * (-1);
         }
         
-        // Find way to multiply by power of 10s 
-        
         // Isolate the first digit in integer
         int digit = integer / 10;
         
