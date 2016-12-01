@@ -13,22 +13,25 @@ import java.util.Scanner;
 public class Q7 {
 
     // Create procedure-type method (only because of the while loop and issue with a return statement)
-    public static void firstDigit(int integer) {
+    public static int firstDigit(int integer) {
         // If integer is negative
         if (integer < 0) {
             // Make it positive
             integer = integer * (-1);
         }
-        // While the integer is not a single digit
-        while (integer > 9) {
-            // Divide the integer by 10
-            integer = integer / 10;
+
+        // If the integer is not a single digit
+        if (integer > 9) {
+            do {
+                // Remove the last digit from the integer
+                integer = integer / 10;
+            // Repeat until integer is a single digit
+            } while (integer > 9);
         }
-        // If the integer is a single digit
-        if (integer <= 9) {
-            // The integer is the first digit
-            System.out.println("The first digit is " + integer);
-        }
+
+        // If the integer is a single digit (<=9), it must be the first digit, so...
+        // Return first digit
+        return integer;
     }
 
     /**
@@ -43,7 +46,10 @@ public class Q7 {
         // Store user's integer
         int integer = input.nextInt();
 
-        // Ouput the first digit
-        firstDigit(integer);
+        // Find first digit using method
+        int firstDigit = firstDigit(integer);
+
+        // Output the first digit
+        System.out.println("The first digit is " + firstDigit);
     }
 }

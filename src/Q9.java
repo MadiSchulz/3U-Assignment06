@@ -14,12 +14,16 @@ public class Q9 {
 
     // Create function-type method
     public static boolean allDigitsOdd(int integer) {
-        // Calculate the remainder of the integer
+        
+    // Calculate the remainder of the integer
         int remainder = integer % 10;
         // If remainder is 0
         if (remainder == 0) {
+            // Even number; not all digits are odd
             return false;
+        // If remainder is not 0
         } else {
+            // All digits are odd
             return true;
         }
     }
