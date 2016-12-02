@@ -12,20 +12,34 @@ import java.util.Scanner;
  */
 public class Q9 {
 
-    // Create function-type method
+    // Create method
     public static boolean allDigitsOdd(int integer) {
+        // Variable to store odd # count
+        int countOdd = 0;
+        // Variable to store even # count
+        int countEven = 0;
+
+        do {
+            // Divide integer into groups of two
+            int remainder = integer % 2;
+
+            // If the remainder is 0 (even)
+            if (remainder == 0) {
+                // Count as even #
+                countEven++;
+            }
+            // If remainder is 1 (odd)
+            if (remainder == 1) {
+                // Count as odd #
+                countOdd++;
+            }
+            // Remove the last digit from the integer
+            integer = integer / 10;
+        // Loop while the integer is still a whole number
+        } while (integer >-1);
         
-    // Calculate the remainder of the integer
-        int remainder = integer % 10;
-        // If remainder is 0
-        if (remainder == 0) {
-            // Even number; not all digits are odd
-            return false;
-        // If remainder is not 0
-        } else {
-            // All digits are odd
-            return true;
-        }
+        // Return true if no even #s are counted
+        return countEven == 0;
     }
 
     /**
@@ -39,8 +53,11 @@ public class Q9 {
         System.out.println("Please input an integer:");
         // Store user's integer
         int integer = input.nextInt();
-        
-        allDigitsOdd(integer);
 
+        // Determine if all digits are odd using method
+        boolean answer = allDigitsOdd(integer);
+
+        // Output answer
+        System.out.println(answer);
     }
 }
