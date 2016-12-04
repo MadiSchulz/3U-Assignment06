@@ -14,8 +14,18 @@ import java.util.Scanner;
 public class Q10 {
 
     // Create procedure-type method
-    public static void sameDashes(String one, String two){
-        // 
+    public static boolean sameDashes(String one, String two){
+        
+// Are there even any dashes?
+        // If yes, go through the process
+        
+        
+        // If not, skip entirely (if loop)
+        
+        // Return true?
+        // If no dashes, true because they have 0 dashes
+    return true;
+    return false;
     }
     
     /**
