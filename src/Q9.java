@@ -14,15 +14,15 @@ public class Q9 {
 
     // Create method
     public static boolean allDigitsOdd(int integer) {
-        
+
         // Variable to store odd # count
         int countOdd = 0;
         // Variable to store even # count
         int countEven = 0;
 
-        // Loop while the integer is a whole number
-        while (integer > -1) {
-            
+        // Loop while the integer is a positive number
+        while (integer >= 1) {
+
             // Divide integer into groups of two
             int remainder = integer % 2;
 
@@ -39,7 +39,6 @@ public class Q9 {
             // Remove the last digit from the integer
             integer = integer / 10;
         }
-        
         // Return true if no even #s are counted
         return countEven == 0;
     }
@@ -57,8 +56,6 @@ public class Q9 {
         int integer = input.nextInt();
 
         // Determine if all digits are odd using method
-        
-        // Output answer
         System.out.println(allDigitsOdd(integer));
     }
 }
