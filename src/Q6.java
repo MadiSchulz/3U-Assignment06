@@ -30,18 +30,12 @@ public class Q6 {
      */
     public static void main(String[] args) {
 
-        // Create scanner for user input
-        Scanner input = new Scanner(System.in);
-        // Ask user for an integer
-        System.out.println("Please input an integer:");
-        // Store user's integer
-        int integer = input.nextInt();
+        // Test method
+        int lastDigit = lastDigit(3572);
+        System.out.println(lastDigit);
 
-        // Find last digit using method
-        int lastDigit = lastDigit(integer);
-
-        // Output the last digit
-        System.out.println("The last digit is " + lastDigit);
+        int lastDigit2 = lastDigit(-947);
+        System.out.println(lastDigit2);
 
     }
 }

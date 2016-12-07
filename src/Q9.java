@@ -48,14 +48,8 @@ public class Q9 {
      */
     public static void main(String[] args) {
 
-        // Create scanner for user input
-        Scanner input = new Scanner(System.in);
-        // Ask user for an integer
-        System.out.println("Please input an integer:");
-        // Store user's integer
-        int integer = input.nextInt();
-
-        // Determine if all digits are odd using method
-        System.out.println(allDigitsOdd(integer));
+        // Test method
+        System.out.println(allDigitsOdd(135319));
+        System.out.println(allDigitsOdd(9145293));
     }
 }

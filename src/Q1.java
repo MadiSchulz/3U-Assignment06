@@ -31,10 +31,7 @@ public class Q1 {
         // Store user's radius value
         double radius = input.nextDouble();
 
-        // Calculate area of circle using method
-        double area = circleArea(radius);
-
         // Output answer to user
-        System.out.println("The circle's area is " + area);
+        System.out.println("The circle's area is " + circleArea(radius));
     }
 }

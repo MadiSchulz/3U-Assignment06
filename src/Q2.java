@@ -13,6 +13,7 @@ public class Q2 {
 
     // Create procedure-type method
     public static void examGrade(int percent) {
+
         // If less than 50%,
         if (percent < 50) {
             // Grade is an F
@@ -41,14 +42,7 @@ public class Q2 {
      */
     public static void main(String[] args) {
 
-        // Create scanner for user input
-        Scanner input = new Scanner(System.in);
-        // Ask user to input exam percentage
-        System.out.println("Input the exam percentage:");
-        // Store user's percentage
-        int percent = input.nextInt();
-
-        // Output answer to user using method
-        examGrade(percent);
+        // Test method
+        examGrade(81);
     }
 }

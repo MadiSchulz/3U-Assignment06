@@ -19,16 +19,14 @@ public class Q7 {
             // Make it positive
             integer = integer * (-1);
         }
-
         // If the integer is not a single digit
         if (integer > 9) {
             do {
                 // Remove the last digit from the integer
                 integer = integer / 10;
-            // Repeat until integer is a single digit
+                // Repeat until integer is a single digit
             } while (integer > 9);
         }
-
         // If the integer is a single digit (<=9), it must be the first digit, so...
         // Return first digit
         return integer;
@@ -39,17 +37,11 @@ public class Q7 {
      */
     public static void main(String[] args) {
 
-        // Create scanner for user input
-        Scanner input = new Scanner(System.in);
-        // Ask user for an integer
-        System.out.println("Please input an integer:");
-        // Store user's integer
-        int integer = input.nextInt();
+        // Test method
+        int lastDigit = firstDigit(3572);
+        System.out.println(lastDigit);
 
-        // Find first digit using method
-        int firstDigit = firstDigit(integer);
-
-        // Output the first digit
-        System.out.println("The first digit is " + firstDigit);
+        int lastDigit2 = firstDigit(-947);
+        System.out.println(lastDigit2);
     }
 }

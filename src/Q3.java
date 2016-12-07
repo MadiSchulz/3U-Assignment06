@@ -12,13 +12,14 @@ import java.util.Scanner;
 public class Q3 {
 
     // Create procedure-type method
-    public static void factors(int number) {
-        // Loop to divide number
-        for (int x = 1; x < (number + 1); x++) {
-            // Divide number by x
-            int remainder = number % x;
-            // If number divides evenly by x, output it
+    public static void factors(int integer) {
+        // Loop to divide integer
+        for (int x = 1; x < (integer + 1); x++) {
+            // Divide integer by x
+            int remainder = integer % x;
+            // If integer divides evenly by x
             if (remainder == 0) {
+                // Output x
                 System.out.print(x + "  ");
             }
         }
@@ -29,16 +30,10 @@ public class Q3 {
      */
     public static void main(String[] args) {
 
-        // Create scanner for user input
-        Scanner input = new Scanner(System.in);
-        // Ask user to enter a number
-        System.out.println("Enter a number:");
-        // Store user's number
-        int number = input.nextInt();
+        // Test method
+        factors(10);
 
-        // Tell users what numbers mean
-        System.out.println("The factors of " + number + " are:");
-        // Output factor list using method
-        factors(number);
+        System.out.println();
+        factors(30);
     }
 }
